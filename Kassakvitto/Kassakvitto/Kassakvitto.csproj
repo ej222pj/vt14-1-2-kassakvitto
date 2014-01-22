@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Error.html" />
     <Content Include="focusScript.js" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
