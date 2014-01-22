@@ -48,7 +48,7 @@ namespace Kassakvitto.Model
                 MoneyOff = Subtotal * DiscountRate;
                 Total = Subtotal - MoneyOff;
             }
-            else if (Subtotal > 1000 && Subtotal < 5000)
+            else if (Subtotal > 999 && Subtotal < 5000)
             {
                 DiscountRate = 0.1;
                 MoneyOff = Subtotal * DiscountRate;

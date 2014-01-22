@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kassakvitto.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +19,11 @@ namespace Kassakvitto
         {
             if (IsValid) 
             {
-                
+                Receipt Receipt = new Receipt(Double.Parse(Amount.Text));
+                labelSubtotal.Text = String.Format("{0:c}", Receipt.Subtotal);
+                labelDiscountRate.Text = String.Format("{0} %", Receipt.DiscountRate * 100);
+                labelMoneyOff.Text = String.Format("{0:c}", Receipt.MoneyOff);
+                labelTotal.Text = String.Format("{0:c}", Receipt.Total);
             }
             else 
             {

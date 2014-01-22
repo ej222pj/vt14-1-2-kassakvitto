@@ -13,10 +13,10 @@
         <main>
         <h1>Kassakvitto</h1>
     <p>
-        <asp:TextBox ID="Text" runat="server" CssClass="textbox"></asp:TextBox>
+        <asp:TextBox ID="Amount" runat="server" CssClass="textbox"></asp:TextBox>
         <asp:Label ID="Label1" runat="server" Text="kr"></asp:Label>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Får inte vara tomt!" ControlToValidate="Text" Display="Dynamic" Font-Bold="True" Font-Italic="True" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Måste innehålla ett heltal över 0" ControlToValidate="Text" Display="Dynamic" Operator="GreaterThan" Type="Double" ValueToCompare="0" Font-Bold="True" Font-Italic="True" Font-Size="Small" ForeColor="Red"></asp:CompareValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Får inte vara tomt!" ControlToValidate="Amount" Display="Dynamic" Font-Bold="True" Font-Italic="True" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Måste innehålla ett heltal över 0" ControlToValidate="Amount" Display="Dynamic" Operator="GreaterThan" Type="Double" ValueToCompare="0" Font-Bold="True" Font-Italic="True" Font-Size="Small" ForeColor="Red"></asp:CompareValidator>
     
     </p>
 
