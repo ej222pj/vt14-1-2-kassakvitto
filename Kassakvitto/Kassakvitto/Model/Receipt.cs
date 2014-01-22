@@ -64,7 +64,7 @@ namespace Kassakvitto.Model
 
         public override string ToString()
         {
-            return String.Format("Totalt: {0:c}\n\nRabattsats: {1:p0}\nRabatt: {2:c}\nAtt Betala: {3:c}", Subtotal, DiscountRate * 100, MoneyOff, Total;
+            return String.Format("Totalt: {0:c}\n\nRabattsats: {1:p0}\nRabatt: {2:c}\nAtt Betala: {3:c}", Subtotal, DiscountRate * 100, MoneyOff, Total);
         }
 
         public Receipt(double subtotal){

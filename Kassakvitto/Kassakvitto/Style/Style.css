@@ -13,3 +13,10 @@ p {
     float: left;
     clear: right;
 }
+.field-validation-error {
+    color: #F00
+}
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00
+}

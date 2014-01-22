@@ -13,5 +13,17 @@ namespace Kassakvitto
         {
 
         }
+
+        protected void Button_Click(object sender, EventArgs e)
+        {
+            if (IsValid) 
+            {
+                
+            }
+            else 
+            {
+                throw new ArgumentException("Fältet inehåller inte ett flyttal över 0!");
+            }
+        }
     }
 }
