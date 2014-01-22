@@ -61,9 +61,9 @@ namespace Kassakvitto.Model
                 Total = Subtotal - MoneyOff;
             }
         }
-
+        
         public Receipt(double subtotal){
-            Calculate(subtotal);     
+            Calculate(Math.Round(subtotal));//Var tvungen att lägga en Math.round pga en bugg som blev om man skrev 499.999   
         }
     }
 }

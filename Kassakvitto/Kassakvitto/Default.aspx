@@ -20,8 +20,6 @@
     
     </p>
 
-    
-
     <asp:Button ID="Button" runat="server" Text="Beräkna Rabatt" CssClass="button" OnClick="Button_Click" />
 
     <asp:Panel ID="Panel1" runat="server" CssClass="receipt">
