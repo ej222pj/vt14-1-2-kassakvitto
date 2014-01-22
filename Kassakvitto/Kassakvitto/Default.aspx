@@ -20,7 +20,7 @@
     
     </p>
 
-    <asp:Button ID="Button" runat="server" Text="Beräkna Rabatt" CssClass="button" OnClick="Button_Click" />
+    <asp:Button ID="Button" runat="server" Text="Beräkna Rabatt" CssClass="button" OnClick="Button_Click" EnableTheming="False" />
 
     <asp:Panel ID="Panel1" runat="server" CssClass="receipt">
 
@@ -41,5 +41,6 @@
         </div>
     </div>
     </form>
+    <script src="focusScript.js"></script>
 </body>
 </html>
