@@ -29,9 +29,9 @@ namespace Kassakvitto.Model
             }
         }
         //Autoimplementerade
-        public double DiscountRate { get; set; }
-        public double MoneyOff { get; set; }
-        public double Total { get; set; }
+        public double DiscountRate { get; private set; }
+        public double MoneyOff { get; private set; }
+        public double Total { get; private set; }
 
         public void Calculate(double subtotal) {
 
@@ -39,27 +39,21 @@ namespace Kassakvitto.Model
 
             if (Subtotal < 500) {
                 DiscountRate = 0.0;
-                MoneyOff = Subtotal * DiscountRate;
-                Total = Subtotal - MoneyOff;
             }
-            else if (Subtotal > 499 && Subtotal < 1000)
+            else if (Subtotal < 1000)
             {
                 DiscountRate = 0.05;
-                MoneyOff = Subtotal * DiscountRate;
-                Total = Subtotal - MoneyOff;
             }
-            else if (Subtotal > 999 && Subtotal < 5000)
+            else if (Subtotal < 5000)
             {
                 DiscountRate = 0.1;
-                MoneyOff = Subtotal * DiscountRate;
-                Total = Subtotal - MoneyOff;
             }
-            else if (Subtotal > 4999)
+            else
             {
                 DiscountRate = 0.15;
-                MoneyOff = Subtotal * DiscountRate;
-                Total = Subtotal - MoneyOff;
             }
+            MoneyOff = Subtotal * DiscountRate;
+            Total = Subtotal - MoneyOff;
         }
         
         public Receipt(double subtotal){
